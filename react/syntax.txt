@@ -1,0 +1,33 @@
+utiliser:
+const { nom des className} = this.props
+<h1> {className}<h1>
+si il y a beaucoup de props
+
+Utiliser la balise <Fragment> en l'important avec react ex:
+import React, {  Fragment }from "react"
+pour pouvoir l'utiliser
+Fragment et utiliser pour écrire plus balise html dans react
+
+vérifier la présence d'un {children } afficher le {children} si il y en a un,
+ sinon renvoyer un <Fragment /> pour évité d'avoir un <p> vide
+{children ?   <p>{children}</p> : <Fragment />}
+
+Le state:
+sert a récupéré les paramètre d'une variable et si on change ces paramètre
+à les mettres a jour dans tout les endroit ou le paramètre et appelé
+
+pour enregistrer les changement en localStorage:
+
+componentDidMount () {
+  const text = localStorage.getItem("text")
+  if (text) {
+    this.setState({ text })
+  }else{
+    this.setState({ text: sampleText })
+  }
+}
+componentDidUpdate () {
+  const {text} = this.state
+  // or const text = this.state.text
+  localStorage.setItem("text", text)
+}

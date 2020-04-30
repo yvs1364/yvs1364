@@ -1,0 +1,60 @@
+Started GET "/" for ::1 at 2020-04-25 15:39:58 +0200
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 360)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/yvs/code/yvs1364/rails_react_recipe-master/public/packs
+[Webpacker] warning ../../package.json: No license field
+warning ../../../package.json: No license field
+
+[Webpacker] Hash: cd8ef915109528a074f3
+Version: webpack 4.43.0
+Time: 9241ms
+Built at: 04/25/2020 3:40:09 PM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-01b10be37d412153aa8a.js   2.59 MiB        Index  [emitted] [immutable]  Index
+      js/Index-01b10be37d412153aa8a.js.map   2.84 MiB        Index  [emitted] [dev]        Index
+    js/application-bbe9c4a129ab949e0636.js    124 KiB  application  [emitted] [immutable]  application
+js/application-bbe9c4a129ab949e0636.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-bbe9c4a129ab949e0636.js js/application-bbe9c4a129ab949e0636.js.map
+Entrypoint Index = js/Index-01b10be37d412153aa8a.js js/Index-01b10be37d412153aa8a.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 893 bytes {Index} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 1.47 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {Index} [built]
+    + 46 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10949ms (Views: 10942.0ms | ActiveRecord: 0.0ms | Allocations: 27373)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2020-04-25 15:40:12 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 19ms (Views: 10.2ms | ActiveRecord: 5.0ms | Allocations: 7686)
+
+
+Started GET "/recipes" for ::1 at 2020-04-25 15:40:50 +0200
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"recipes"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 189)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 37.8ms | ActiveRecord: 0.0ms | Allocations: 26553)
+
+
+Started GET "/api/v1/recipes/index" for ::1 at 2020-04-25 15:40:50 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:4:in `index'
+Completed 200 OK in 15ms (Views: 7.3ms | ActiveRecord: 4.2ms | Allocations: 7635)
+
+
